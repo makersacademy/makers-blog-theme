@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "bower_components/makers_styles/source/stylesheets/all.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+
+    {{! Typekit }}
+    <script src="//use.typekit.net/fla8fba.js"></script>
+    <script>try{Typekit.load();}catch(e){} </script>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+  </head>
+  <body class="{{body_class}} nav-closed">
+
+    {{navigation}}
+
+    <div class="site-wrapper">
+
+      {{! Everything else gets inserted here }}
+      {{{body}}}
+
+
+    </div>
+
+    {{> footer}}
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file taken from Casper }}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    {{! Makers JavaScript }}
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/all.js"}}"></script>
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/doorbell.js"}}"></script>
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/hooks.js"}}"></script>
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/jquery.fixedscroll.js"}}"></script>
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/mixpanel-email-capture.js"}}"></script>
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/navigation.js"}}"></script>
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/vendor/jquery.ajaxchimp.js"}}"></script>
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/vendor/retina.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "bower_components/makers_styles/source/javascripts/vendor/slick.js"}}"></script>
+
+    {{! Prism }}
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+
+  </body>
+</html>

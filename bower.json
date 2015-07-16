@@ -1,0 +1,24 @@
+{
+  "name": "makersblog",
+  "version": "0.0.1",
+  "homepage": "https://github.com/makersacademy/makersblog",
+  "authors": [
+    "Spike Nox <spike01@gmail.com>"
+  ],
+  "description": "Ghost theme for MA blog",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "content/themes/makersblog/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "makers_styles": "~2.0.0"
+  }
+}
