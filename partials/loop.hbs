@@ -4,19 +4,22 @@
 <!-- </div> -->
 
 {{! This is the post loop - each post will be output using this markup }}
+<section class="article--centered">
 {{#foreach posts}}
-  <section class='hero'>
-    <div class='container'>
-      <div class='centered-row'>
-        <h1 class="post-title">{{title}}</h1>
-        <p>{{excerpt words="26"}}...</p>
-        <p>
-          <a class='button' href="{{url}}">Read more</a>
-        </p>
-      </div>
-    </div>
-  </section>
+  <article class="loop">
+    <a href="{{url}}">
+      <h1>{{title}}</h1>
+      {{#author}}
+        <!--by {{name}}-->
+      <!--{{/author}}-->
+      <!--<p class="date">-->
+        <!--<time class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>-->
+      <!--</p>-->
+      <p>{{excerpt words="30"}}...</p>
+    </a>
+    <hr>
+  </article>
 {{/foreach}}
-
+</section>
 <!-- {{! Previous/next page links - displayed on every page }} -->
 <!-- {{pagination}} -->
