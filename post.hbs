@@ -49,8 +49,8 @@
   </article>
 </section>
 <hr>
-<h4>Related</h4>
-<aside class="read-next">
+<aside class="read-next article--centered loop">
+  <h4>Related</h4>
     {{#next_post}}
     <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
         <section class="post">
@@ -67,5 +67,7 @@
         </section>
     </a>
     {{/prev_post}}
-</aside>
+  </aside>
 {{/post}}
+
+{{navigation}}

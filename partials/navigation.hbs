@@ -1,48 +1,13 @@
-<header class='mobile-navigation' role='banner'>
-  <label class='nav-trigger-label' for='nav_trigger' role='menu-trigger'></label>
-  <input class='nav-trigger' id='nav_trigger' type='checkbox'>
-  <nav role='navigation'>
-    <div class='image--centered image--small'>
-      <img src="http://assets.makersacademy.com/images/logo/ma-white.png"}}" />
+<section class='backgrounded loop'>
+  <div class='container'>
+    <div class='four-width-row row-with-borders'>
+      {{#foreach navigation}}
+      <div class='column'>
+        <h3>
+          <a href="{{url absolute="true"}}">{{label}}</a>
+        </h3>
+      </div>
+      {{/foreach}}
     </div>
-      <ul class='navigation-menu'>
-        <li class=''>
-          <a href="http://beta.makersacademy.com/">Home</a>
-        </li>
-        <li class=''>
-          <a href="http://beta.makersacademy.com/graduates/">Graduates</a>
-        </li>
-        <li class=''>
-          <a href="http://beta.makersacademy.com/partners/">Partners</a>
-        </li>
-        <li class=''>
-          <a href="http://beta.makersacademy.com/curriculum/">Curriculum</a>
-        </li>
-        <li class=''>
-          <a href="http://beta.makersacademy.com/about-us/">About Us</a>
-        </li>
-      </ul>
-  </nav>
-</header>
-<header class='navigation' role='banner'>
-  <nav role='navigation'>
-    <a class="image--brand" href="http://www.makersacademy.com/"><img src="http://assets.makersacademy.com/images/logo/ma-wordmark-red.png"}}"/></a>
-    <ul class='navigation-menu'>
-      <li class=''>
-        <a href="http://beta.makersacademy.com/graduates/">Graduates</a>
-      </li>
-      <li class=''>
-        <a href="http://beta.makersacademy.com/partners/">Partners</a>
-      </li>
-      <li class=''>
-        <a href="http://beta.makersacademy.com/curriculum/">Curriculum</a>
-      </li>
-      <li class=''>
-        <a href="http://beta.makersacademy.com/about-us/">About Us</a>
-      </li>
-      <li class=''>
-         <a class="button--vertical" href="http://www.makersacademy.com/apply">Apply</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+  </div>
+</section>
