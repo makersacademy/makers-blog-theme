@@ -73,17 +73,36 @@
     font-style: normal;
 }
 
+.author-box {
+    display: block;
+    text-align: center;
+}
+
 .author-box-avatar {
-   text-align: center;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 1em;
 }
 
 .author-box-avatar img {
+    display: inline-block;
     height: 90px;
     width: 90px;
     border-radius: 50%;
     margin: 0 auto;
 }
 
+.author-box-name {
+   display: inline-block;
+}
+
 .loop a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+.author-box::after {
+    clear: both;
+    content: "";
+    display: table;
 }
