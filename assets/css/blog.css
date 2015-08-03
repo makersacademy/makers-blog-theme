@@ -97,14 +97,14 @@
    display: inline-block;
 }
 
-.loop a {
-    text-decoration: none;
-}
-
 .author-box::after {
     clear: both;
     content: "";
     display: table;
+}
+
+.loop a {
+    text-decoration: none;
 }
 
 .article--centered {
@@ -113,4 +113,21 @@
 
 .article--centered article p {
     max-width: 40em;
+}
+
+.blog-nav {
+    min-height: auto;
+}
+
+.blog-nav h3 {
+    margin: 0;
+}
+
+.blog-nav .column {
+    vertical-align: middle;
+    padding: 1em;
+}
+
+form.blog-newsletter-capture input[type="email"], form.blog-newsletter-capture input[type="submit"] {
+    color: black;
 }

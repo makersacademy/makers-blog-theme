@@ -8,9 +8,11 @@
 <section class="article--centered">
   <article>
     <h1>{{title}}</h1>
+
     {{#author}}
-      by {{name}}
+    <p class="author">by {{name}}</p>
     {{/author}}
+
     <p class="date">
       <time class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
     </p>
@@ -28,8 +30,10 @@
       <span class="author-box-name"><h3>{{name}}</h3></span>
     </div>
     {{/author}}
+  </article>
 
-    {{!>email-capture}}
+  <div class="container">
+    {{>email-capture}}
 
     <div class="share">
       <h4>Share this post</h4>
@@ -46,7 +50,7 @@
         <span class="hidden">Google+</span>
       </a>
     </div>
-  </article>
+  </div>
 </section>
 <hr>
 <aside class="read-next article--centered loop">
