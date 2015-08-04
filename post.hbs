@@ -7,7 +7,7 @@
 {{#post}}
 <section class="article--centered">
   <article>
-    <h1>{{title}}</h1>
+    <h2>{{title}}</h2>
 
     {{#author}}
     <p class="author">by {{name}}</p>
@@ -24,7 +24,7 @@
     <div class="author-box">
       {{#if image}}
       <div class="author-box-avatar">
-        <img alt="author image" src="{{image}}">
+        <img id="author-img" alt="author image" src="{{image}}">
       </div>
       {{/if}}
       <span class="author-box-name"><h3>{{name}}</h3></span>
@@ -58,16 +58,16 @@
   <h4>Related</h4>
     {{#next_post}}
     <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
+        <section class="post no-min-height">
+            <h3>{{title}}</h3>
             <p>{{excerpt words="19"}}&hellip;</p>
         </section>
     </a>
     {{/next_post}}
     {{#prev_post}}
     <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
+        <section class="post no-min-height">
+            <h3>{{title}}</h3>
             <p>{{excerpt words="19"}}&hellip;</p>
         </section>
     </a>
@@ -75,6 +75,7 @@
   </aside>
 {{/post}}
 
-{{>apply}}
+
+{{>splash}}
 
 {{navigation}}

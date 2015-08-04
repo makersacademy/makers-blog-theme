@@ -93,8 +93,16 @@
     margin: 0 auto;
 }
 
+#author-img {
+  margin-bottom: 0;
+}
+
 .author-box-name {
    display: inline-block;
+}
+
+.author-box-name h3 {
+  color: #afafaf;
 }
 
 .author-box::after {
@@ -130,4 +138,8 @@
 
 form.blog-newsletter-capture input[type="email"], form.blog-newsletter-capture input[type="submit"] {
     color: black;
+}
+
+.article--centered article hr {
+    width: 61.8%;
 }

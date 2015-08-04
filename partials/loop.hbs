@@ -1,21 +1,16 @@
-<!-- {{! Previous/next page links - only displayed on page 2+ }} -->
-<!-- <div class="extra-pagination inner"> -->
-<!--     {{pagination}} -->
-<!-- </div> -->
-
 {{! This is the post loop - each post will be output using this markup }}
 <section class="article--centered">
-{{#foreach posts}}
+  {{#foreach posts}}
   <article class="loop">
     <a href="{{url}}">
-      <h1>{{title}}</h1>
+      <h3>{{title}}</h3>
       {{#author}}
       {{/author}}
-      <p>{{excerpt words="30"}}...</p>
+      <p>{{excerpt words="50"}}...</p>
     </a>
     <hr>
   </article>
-{{/foreach}}
+  {{/foreach}}
+  {{pagination}}
 </section>
 <!-- {{! Previous/next page links - displayed on every page }} -->
-<!-- {{pagination}} -->
