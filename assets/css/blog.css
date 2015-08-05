@@ -73,17 +73,73 @@
     font-style: normal;
 }
 
+.author-box {
+    display: block;
+    text-align: center;
+}
+
 .author-box-avatar {
-   text-align: center;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 1em;
 }
 
 .author-box-avatar img {
+    display: inline-block;
     height: 90px;
     width: 90px;
     border-radius: 50%;
     margin: 0 auto;
 }
 
+#author-img {
+  margin-bottom: 0;
+}
+
+.author-box-name {
+   display: inline-block;
+}
+
+.author-box-name h3 {
+  color: #afafaf;
+}
+
+.author-box::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 .loop a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+.article--centered {
+    max-width: 40em;
+}
+
+.article--centered article p {
+    max-width: 40em;
+}
+
+.blog-nav {
+    min-height: auto;
+}
+
+.blog-nav h3 {
+    margin: 0;
+}
+
+.blog-nav .column {
+    vertical-align: middle;
+    padding: 1em;
+}
+
+form.blog-newsletter-capture input[type="email"], form.blog-newsletter-capture input[type="submit"] {
+    color: black;
+}
+
+.article--centered article hr {
+    width: 61.8%;
 }

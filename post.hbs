@@ -7,10 +7,12 @@
 {{#post}}
 <section class="article--centered">
   <article>
-    <h1>{{title}}</h1>
+    <h2>{{title}}</h2>
+
     {{#author}}
-      by {{name}}
+    <p class="author">by {{name}}</p>
     {{/author}}
+
     <p class="date">
       <time class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
     </p>
@@ -22,14 +24,16 @@
     <div class="author-box">
       {{#if image}}
       <div class="author-box-avatar">
-        <img alt="author image" src="{{image}}">
+        <img id="author-img" alt="author image" src="{{image}}">
       </div>
       {{/if}}
       <span class="author-box-name"><h3>{{name}}</h3></span>
     </div>
     {{/author}}
+  </article>
 
-    {{!>email-capture}}
+  <div class="container">
+    {{>email-capture}}
 
     <div class="share">
       <h4>Share this post</h4>
@@ -46,28 +50,32 @@
         <span class="hidden">Google+</span>
       </a>
     </div>
-  </article>
+  </div>
 </section>
-<hr>
+
+
 <aside class="read-next article--centered loop">
   <h4>Related</h4>
     {{#next_post}}
     <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
+        <section class="post no-min-height">
+            <h3>{{title}}</h3>
             <p>{{excerpt words="19"}}&hellip;</p>
         </section>
     </a>
     {{/next_post}}
     {{#prev_post}}
     <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
+        <section class="post no-min-height">
+            <h3>{{title}}</h3>
             <p>{{excerpt words="19"}}&hellip;</p>
         </section>
     </a>
     {{/prev_post}}
   </aside>
 {{/post}}
+
+
+{{>splash}}
 
 {{navigation}}
