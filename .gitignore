@@ -6,6 +6,8 @@ b-cov
 *.out
 *.pid
 *.gz
+.env
+makers-blog-theme.zip
 
 pids
 logs
