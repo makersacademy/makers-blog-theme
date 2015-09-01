@@ -1,8 +1,8 @@
 ## Installation
 
-1. Download the theme from GitHub.
-2. Run `bower install`
-3. Upload the theme as described in the [Ghost Documentation](http://docs.ghost.org/usage/settings/). (tl; dr: make a zip of the folder and upload it through the Ghost blog admin dashboard)
+* Download the theme from GitHub.
+* Run `bower install`
+* Upload the theme as described in the [Ghost Documentation](http://docs.ghost.org/usage/settings/). (tl; dr: make a zip of the folder and upload it through the Ghost blog admin dashboard)
 
 ## Local installation
 
@@ -20,3 +20,10 @@ git clone https://github.com/makersacademy/makers-blog-theme.git content/themes/
 * Select the theme `makers-blog-theme - <version number>`
 * Install some sample content as outlined [https://allaboutghost.com/easy-theme-development-with-sample-ghost-content/](here)
 * Ready to rock.
+
+## Publishing
+
+* Make sure it works locally - you can only publish if you have run `bower install`
+* Update the version number in `package.json`
+* Make sure you have a `.env` file - details in LastPass
+* `grunt`
