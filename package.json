@@ -1,6 +1,6 @@
 {
   "name": "makers-blog-theme",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "devDependencies": {
     "dotenv": "^1.2.0",
     "grunt": "^0.4.5",
