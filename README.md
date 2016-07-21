@@ -27,3 +27,12 @@ git clone https://github.com/makersacademy/makers-blog-theme.git content/themes/
 * Update the version number in `package.json`
 * Make sure you have a `.env` file - details in LastPass
 * `grunt`
+
+If the above doesn't work, Ghost have probably changed their API, so you'll have to do it manually.
+
+* Make sure it works locally - you can only publish if you have run `bower install`
+* Update the version number in `package.json`
+* Zip this whole folder
+* Go to [ghost.org](https://ghost.org), log in and click on the little settings cog (or [click here](https://ghost.org/blogs/makersacademy/), once logged in)
+* Drag and drop the zipped blog theme into Ghost
+* Save, celebrate, etc.
